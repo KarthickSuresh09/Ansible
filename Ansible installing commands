@@ -32,7 +32,8 @@ STEP4- Form controller server verify that ssh connection between controller and 
 ssh <private IP of host>
 
 STEP5- update inventory file , create a host group and add host IPs to the group
-vi /etc/ansible/hosts
+cd /etc/ansible/hosts
+vi hosts
 [myhosts]
 172.31.38.127
 172.31.45.115
