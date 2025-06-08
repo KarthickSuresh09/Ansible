@@ -6,6 +6,26 @@ IT orchestration.
 
 It simplifies complex tasks and streamlines processes by using a declarative language to describe system configurations.
 
+Ansible Architure
+* it is an Angent less tool 
+Ansible must be install in only Master machine 
+
+-------------                                       -------------
+|            |  ================================>   |Slave-1    |
+|  Ansible   |                                      |Machine    | 
+|  Master    |                                      -------------
+|            |
+-------------   ===============================>    ---------------
+                                                    |Slave-2      |
+                                                    |Machine      |
+                                                    ---------------
+
+
+
+
+Pre-request of Ansible machines
+* SSH ===> Connetivity must ====> Master & Slave machines
+* Python must be installed in both machines
 
 sudo hostnamectl set-hostname <hostname>
 Install ansible on contoller:
