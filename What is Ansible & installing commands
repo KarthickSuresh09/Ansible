@@ -1,3 +1,12 @@
+Ansible is an open-source automation tool used for configuration management:
+
+application deployment, 
+task automation, and 
+IT orchestration. 
+
+It simplifies complex tasks and streamlines processes by using a declarative language to describe system configurations.
+
+
 sudo hostnamectl set-hostname <hostname>
 Install ansible on contoller:
 STEP 0-
