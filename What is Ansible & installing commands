@@ -27,6 +27,12 @@ Pre-request of Ansible machines
 * SSH ===> Connetivity must ====> Master & Slave machines
 * Python must be installed in both machines
 
+
+==> Default file
+* Ansible maintain a default inventory file /etc/ansible/host
+
+
+
 sudo hostnamectl set-hostname <hostname>
 Install ansible on contoller:
 STEP 0-
