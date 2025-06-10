@@ -1,0 +1,27 @@
+if you are root user means try this command
+command==> ansible -m user -a "name=katzy password=111222333" dbservers 
+
+Without root user try this command
+command==> ansible -m user -a "name=katzy password=111222333" dbservers --become
+
+
+[WARNING]: The input password appears not to have been hashed. The 'password' argument must be encrypted for this module to work properly.
+[WARNING]: Platform linux on host 172.31.42.167 is using the discovered Python interpreter at /usr/bin/python3.12, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.18/reference_appendices/interpreter_discovery.html for more
+information.
+172.31.42.167 | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.12"
+    },
+    "changed": true,
+    "comment": "",
+    "create_home": true,
+    "group": 1001,
+    "home": "/home/katzy",
+    "name": "katzy",
+    "password": "NOT_LOGGING_PASSWORD",
+    "shell": "/bin/sh",
+    "state": "present",
+    "system": false,
+    "uid": 1001
+}
