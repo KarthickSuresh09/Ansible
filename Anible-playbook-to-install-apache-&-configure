@@ -1,0 +1,22 @@
+---
+- name: Install Apache on ubuntu server
+  hosts: all
+  become: yes
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install Apache2
+      apt:
+        name: Apache2
+        state: present
+
+    - name: Ensure Apache service is started and enabled
+      service: 
+        name: Apache2
+
+    - name: create a custom HTML page
+      copy: 
+        content: "<h1>Apache web server is installed sucessfully"
+        dest: /var/www/html/index.html        
