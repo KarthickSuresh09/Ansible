@@ -1,0 +1,43 @@
+Ansible is an open-source automation tool used for configuration management:
+
+application deployment, 
+task automation, and 
+IT orchestration. 
+
+It simplifies complex tasks and streamlines processes by using a declarative language to describe system configurations.
+
+Ansible Architure
+* it is an Angent less tool 
+Ansible must be install in only Master machine 
+
+-------------                                       -------------
+|            |  ================================>   |Slave-1    |
+|  Ansible   |                                      |Machine    | 
+|  Master    |                                      -------------
+|            |
+-------------   ===============================>    ---------------
+                                                    |Slave-2      |
+                                                    |Machine      |
+                                                    ---------------
+
+
+
+
+Pre-request of Ansible machines
+* SSH ===> Connetivity must ====> Master & Slave machines
+* Python must be installed in both machines
+
+
+==> Default file
+* Ansible maintain a default inventory file /etc/ansible/host
+
+Ansible host file
+* it default disable the servers hosts
+## [webservers]
+## alpha.example.org
+## beta.example.org
+## 192.168.1.100
+## 192.168.1.110
+
+
+
