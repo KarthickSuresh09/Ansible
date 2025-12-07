@@ -7,14 +7,15 @@ Ansible Installation Link ==> https://docs.ansible.com/projects/ansible/latest/i
 sudo hostnamectl set-hostname <hostname>
 
 STEP 0: Install ansible on contoller server:
-sudo su - root
+```sudo su - root
 sudo apt update
 sudo apt install software-properties-common
 sudo add-apt-repository --yes --update ppa:ansible/ansible
 sudo apt install ansible
 ansible --version
+```
 
-On all servers:
+On all slave servers:
 
 STEP1- Login as root user. Create a ansible user, set the password and add it to the sudoers file:
 sudo su
