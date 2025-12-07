@@ -40,4 +40,8 @@ Ansible host file
 ## 192.168.1.110
 
 
-
+How Ansible Controlling all slave machine
+cd /usr/lib/python3/dist-packages/ansible/modules
+cat user.py
+user.py in Ansible is the module file that actually implements all user-management operations on a target machine — creating users, 
+deleting users, updating passwords, managing home directories, setting shells, and handling UID/GID assignments.
