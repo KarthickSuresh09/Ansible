@@ -14,6 +14,12 @@ sudo add-apt-repository --yes --update ppa:ansible/ansible
 sudo apt install ansible
 ansible --version
 ```
+How Ansible Controlling all slave machine
+cd /usr/lib/python3/dist-packages/ansible/modules
+cat user.py
+user.py in Ansible is the module file that actually implements all user-management operations on a target machine — creating users, 
+deleting users, updating passwords, managing home directories, setting shells, and handling UID/GID assignments.
+
 
 On all slave servers:
 
