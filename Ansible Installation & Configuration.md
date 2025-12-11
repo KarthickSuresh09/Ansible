@@ -44,10 +44,12 @@ Command
 ssh-keygen -t rsa
 ```
 
-STEP3-
-On hosts:
+STEP3 - On hosts:
+
 cd .ssh
-vi authorized_keys
+
+vi or nano authorized_keys
+
 copy the public key id_rsa.pub content from the controller and copy it inside authorized_keys
 
 STEP4- Form controller server verify that ssh connection between controller and host is getting established:
