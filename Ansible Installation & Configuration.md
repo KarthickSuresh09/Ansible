@@ -23,7 +23,7 @@ deleting users, updating passwords, managing home directories, setting shells, a
 
 On all slave servers:
 
-STEP1- (It is Optional if your going seperate user use this)
+STEP1- (It is Optional if your going seperate user use this method all configuration inside same user)
 
 Login as root user. Create a ansible user, set the password and add it to the sudoers file:
 
@@ -35,10 +35,14 @@ passwd ansible
 
 echo "ansible ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/ansible
 
-STEP2- Switch to ansible user
-generate key pair using below command. This would generate a private and a public key inside .ssh directory:
-ssh-keygen -t rsa
+STEP2- 
 
+Switch to user generate key pair using below command. This would generate a private and a public key inside .ssh directory:
+
+Command 
+```
+ssh-keygen -t rsa
+```
 
 STEP3-
 On hosts:
