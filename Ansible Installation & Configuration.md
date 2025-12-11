@@ -23,11 +23,16 @@ deleting users, updating passwords, managing home directories, setting shells, a
 
 On all slave servers:
 
-STEP1- Login as root user. Create a ansible user, set the password and add it to the sudoers file:
+STEP1- 
 
-sudo su
+Login as root user. Create a ansible user, set the password and add it to the sudoers file:
+
+sudo su - root
+
 useradd -m ansible
+
 passwd ansible
+
 echo "ansible ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/ansible
 
 STEP2- Switch to ansible user
