@@ -24,6 +24,7 @@ deleting users, updating passwords, managing home directories, setting shells, a
 On all slave servers:
 
 STEP1- Login as root user. Create a ansible user, set the password and add it to the sudoers file:
+
 sudo su
 useradd -m ansible
 passwd ansible
