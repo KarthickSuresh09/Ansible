@@ -67,11 +67,11 @@ STEP5- update inventory file create a host group and add host IPs to the group
 cd /etc/ansible/hosts
 
 sudo vi hosts
-
+```
 [myhosts]
 172.31.38.127
 172.31.45.115
-
+```
 
 Ansible Adhoc commands:
 ansible --inventory /etc/ansible/hosts myhosts -m ping
