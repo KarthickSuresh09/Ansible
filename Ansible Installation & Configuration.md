@@ -57,12 +57,17 @@ vi or nano authorized_keys
 
 copy the public key id_rsa.pub content from the controller and copy it inside authorized_keys
 
+
 STEP4- Form controller server verify that ssh connection between controller and host is getting established:
 ssh <private IP of host>
 
-STEP5- update inventory file , create a host group and add host IPs to the group
+
+STEP5- update inventory file create a host group and add host IPs to the group
+
 cd /etc/ansible/hosts
+
 sudo vi hosts
+
 [myhosts]
 172.31.38.127
 172.31.45.115
