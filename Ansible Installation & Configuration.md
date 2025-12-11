@@ -23,7 +23,7 @@ deleting users, updating passwords, managing home directories, setting shells, a
 
 On all slave servers:
 
-STEP1- 
+STEP1- (It is Optional if your going seperate user use this)
 
 Login as root user. Create a ansible user, set the password and add it to the sudoers file:
 
