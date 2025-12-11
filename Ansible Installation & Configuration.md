@@ -73,14 +73,21 @@ cd /etc/ansible
 
 sudo vi hosts
 ```
-[myhosts]
+[webservers]
 172.31.38.127
+```
+```
+[dbservers]
 172.31.45.115
 ```
 
 Ansible Adhoc commands:
 ansible --inventory /etc/ansible/hosts myhosts -m ping
+
+This command will list all the ansible slave servers
+```
 ansible all -m ping
+```
 ansible all --list-hosts
 ansible all -m shell -a "ls -altr" //list all files on hosts
 ansible myhosts[1] -m shell -a "touch newfile" // create file in server at 1st index
