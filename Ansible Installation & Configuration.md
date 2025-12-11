@@ -62,9 +62,11 @@ STEP4- Form controller server verify that ssh connection between controller and 
 ssh <private IP of host>
 
 
-STEP5- update inventory file create a host group and add host IPs to the group
+STEP-5
 
-cd /etc/ansible/hosts
+update inventory file create a host group and add host IPs to the group
+
+cd /etc/ansible
 
 sudo vi hosts
 ```
