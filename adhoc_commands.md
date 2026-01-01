@@ -18,3 +18,8 @@ ansible all -m copy -a "src=hellofile dest=/home/sysops"
 ansible all -m apt -a "name=apache2 state=present" -b
 ansible all -m service -a "name=apache2 state=stopped" -b
 ansible all -m shell -a "free -m"
+
+to create a user in paticualr host like dbservers
+```
+ansible -m user -a "name=katzy password=1234" dbservers
+```
