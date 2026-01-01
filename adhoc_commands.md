@@ -1,6 +1,14 @@
 ansible --inventory /etc/ansible/hosts myhosts -m ping
+
+It will list all hosts servers and check the SSH connectivity, Authentication
+```
 ansible all -m ping
+```
+
+Simply prints the list of hosts Ansible would target
+```
 ansible all --list-hosts
+```
 ansible all -m shell -a "ls -altr" //list all files on hosts
 ansible myhosts[1] -m shell -a "touch newfile" // create file in server at 1st index
 ansible all -m shell -a "apt install git" //permission denied since no sudo used
