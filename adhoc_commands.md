@@ -1,3 +1,10 @@
+| Flag | Purpose               |
+| ---- | --------------------- |
+| `-m` | Select module         |
+| `-a` | Pass module arguments |
+| `-b` | Run as root           |
+
+
 ansible --inventory /etc/ansible/hosts myhosts -m ping
 
 It will list all hosts servers and check the SSH connectivity, Authentication
